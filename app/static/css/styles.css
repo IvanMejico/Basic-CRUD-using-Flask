@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    border-collapse: collapse;
+    text-align: left;
+}
+th {
+    background-color: rgb(120, 151, 179);
+    color: white;                
+}
+
+form {
+    margin-bottom: 14px;
+}
+
+button {
+    margin: 3px;
+}
+
+table .tblbutton {
+    background: rgb(183, 225, 241);
+}
+
+.main {
+    width:50%;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: rgb(175, 175, 174);
+    border-radius: 5px;
+}

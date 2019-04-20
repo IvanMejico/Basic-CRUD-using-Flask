@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+        <h2>Basic CRUD Program</h2>
+        <hr>
+        <form action="">
+            <input type="text" placeholder="username" style="padding: 5px">
+            <input type="email" placeholder="email" style="padding: 5px">
+            <input type="password" placeholder="password" style="padding: 5px">
+            <input type="submit" value="Submit" style="padding:5px 12px;">
+        </form>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>email</th>
+                <th>password</th>
+                <th></th>
+            </tr>
+            {% for i in users %}
+                <tr>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.username }}</td>
+                    <td>{{ i.email }}</td>
+                    <td>{{ i.password }}</td>
+                    <td class="tblbutton"><button>Edit</button><button>Delete</button></td>
+                    <!-- <td><input type="button" value="Delete"></td> -->
+                </tr>
+            {% endfor %}
+        </table>
+        </div>
+    </body>
+</html>
